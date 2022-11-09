@@ -41,9 +41,9 @@ public class BasePage {
         element.clear();
         sendKeys(element,textToSet);
     }
-    //TODO poprawic pobieranie zmiennej do replace
+
     public double getPrice (WebElement element){
-        return Double.parseDouble(element.getText().replace("$", " "));
+        return Double.parseDouble(element.getText().replace(System.getProperty("currencySymbolToReplace"), " "));
     }
 
     public String getValue (WebElement element){

@@ -1,6 +1,5 @@
 package pages.product;
 
-import configuration.yamlReader.YamlReader;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

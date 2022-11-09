@@ -3,7 +3,7 @@ package configuration.properties;
 import configuration.models.Browser;
 import configuration.models.Config;
 import configuration.models.EnvironmentSpecification;
-import configuration.yamlReader.YamlReader;
+import configuration.helper.YamlReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
