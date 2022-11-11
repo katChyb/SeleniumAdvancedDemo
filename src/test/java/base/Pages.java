@@ -8,6 +8,7 @@ import pages.User.RegistrationPage;
 import pages.User.SignInPage;
 import pages.product.ProductDetailsPage;
 import pages.product.ProductGridPage;
+import pages.product.SearchProductResultPage;
 
 public class Pages extends BaseTest {
 
@@ -18,6 +19,8 @@ public RegistrationPage registrationPage;
 public SignInPage signInPage;
 public MyAccountPage myAccountPage;
 
+public SearchProductResultPage searchProductResultPage;
+
 
     @BeforeEach
     public  void setupPages() {
@@ -27,5 +30,6 @@ public MyAccountPage myAccountPage;
         registrationPage = new RegistrationPage(driver);
         signInPage = new SignInPage(driver);
         myAccountPage = new MyAccountPage(driver);
+        searchProductResultPage = new SearchProductResultPage(driver);
     }
 }

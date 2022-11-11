@@ -10,11 +10,9 @@ environments:
     appUrl: http://146.59.32.4/index.php
     title: TesterSii
     currencySymbolToReplace: $
-  int_env:
-    envName: int_env
-    title: Selenium
-    appUrl: https://www.selenium.dev/
-    currencySymbolToReplace: $
+    amountOfExpectedSearchResultsList: 1
+    wantedProduct: HUMMINGBIRD
+
 
 
 

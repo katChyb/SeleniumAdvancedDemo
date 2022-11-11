@@ -14,12 +14,13 @@ public class ProductGridPage extends BasePage {
     }
 
 
-    @FindBy(css = ".product-description")
+    @FindBy(css = ".product-title")
     private List<WebElement> productGrid;
 
-    public String getRandomProductFromGrid(List<WebElement> productGrid) {
+    public String getRandomProductNameFromGrid() {
         int gridListSize = productGrid.size();
         return productGrid.get(new Random().nextInt(gridListSize)).getText();
+
     }
 
 }
