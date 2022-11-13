@@ -23,4 +23,16 @@ public class ProductGridPage extends BasePage {
 
     }
 
+    public String getNumberProductsFromGrid() {
+        return "There are "+ String.valueOf(productGrid.size())+ " products.";
+    }
+
+
+    @FindBy(css = ".total-products")
+    private WebElement numberOfProductsFoundLabel;
+
+    public String getNumberOfFoundProductsLabel(){
+        return numberOfProductsFoundLabel.getText();
+    }
+
 }
